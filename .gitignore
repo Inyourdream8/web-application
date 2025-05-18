@@ -1,0 +1,31 @@
+# Ignore node_modules for both the backend and frontend.
+node_modules/
+
+# Ignore build output directories (customize these based on your project setup).
+dist/
+build/
+
+# It’s common to ignore environment configuration files that may contain sensitive data.
+.env
+.env.local
+.env.*.local
+
+# Ignore any log files generated during development or production.
+*.log
+
+# macOS specific files
+.DS_Store
+
+
+# Windows specific files
+Thumbs.db
+
+# Ignore IDE-specific files or folders (e.g., VSCode, IntelliJ).
+.vscode/
+.idea/
+
+# Ignore temporary directories created by Google Drive upload process.
+.tmp.driveupload/
+
+# ============== Vite Cache ==============
+.vite/

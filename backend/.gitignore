@@ -1,0 +1,31 @@
+# Sensitive files
+my-lw-project.json
+*.key
+*.pem
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+
+# Build/distributions
+*.egg-info/
+dist/
+build/
+
+# Logs and databases
+*.log
+*.sqlite3
+*.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS-generated
+.DS_Store
+Thumbs.db
