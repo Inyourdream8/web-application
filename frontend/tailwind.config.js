@@ -1,15 +1,16 @@
 // tailwind.config.js
-
 import tailwindcssAnimate from "tailwindcss-animate";
+import tailwindTypography from "@tailwindcss/typography";
+import tailwindScrollbar from "tailwind-scrollbar";
 
 /** @type {import('tailwindcss').Config} */
 const config = {
   darkMode: ["class"],
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   prefix: "",
   theme: {
@@ -109,9 +110,9 @@ const config = {
     },
   },
   plugins: [
-    require("tailwindcss-animate"),
-    require("@tailwindcss/typography"),
-    require("tailwind-scrollbar")({ preferredStrategy: "pseudoelements" }),
+    tailwindcssAnimate,
+    tailwindTypography,
+    tailwindScrollbar({ preferredStrategy: "pseudoelements" }),
   ],
 };
 
